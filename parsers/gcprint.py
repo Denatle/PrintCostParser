@@ -3,9 +3,9 @@ from time import sleep
 
 
 class gcprintParser(__SeleniumParser):
-    def __init__(self):
+    def __init__(self, size, counts, proxy):
         self.parsing_page = "https://gcprint.ru/catalog/nakleyki/stikery-s-zalivkoy-smoloy/?utm_medium=cpc&utm_source=yandex&utm_campaign=pechat_nakleek_poisk_vch&utm_content=%7cc%3a47196033%7cg%3a4009760574%7cb%3a8220214298%7ck%3a18754346939%7cst%3asearch%7ca%3ano%7cs%3anone%7ct%3apremium%7cp%3a3%7cr%3a%7cdev%3adesktop&utm_term=..ob..emnie_nakleyki..&cm_id=47196033_4009760574_8220214298_18754346939__none_search_type1_no_desktop_premium_213&_openstat=zglyzwn0lnlhbmrlec5ydts0nze5njazmzs4mjiwmje0mjk4o3lhbmrlec5ydtpwcmvtaxvt&yclid=4970564170182076720"
-        super().__init__()
+        super().__init__(size, counts, proxy)
 
     def parse(self, container) -> None:
         self.get(self.parsing_page)

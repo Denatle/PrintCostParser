@@ -5,9 +5,9 @@ from time import sleep
 
 
 class coralprintParser(__UndetectedParser):
-    def __init__(self):
+    def __init__(self, size, counts, proxy):
         self.parsing_page = 'https://www.coral-print.ru/pechat-nakleek/obemnyh/s-logotipom.html'
-        super().__init__()
+        super().__init__(size, counts, proxy)
 
     def parse(self, container: list) -> None:
         self.get(self.parsing_page)

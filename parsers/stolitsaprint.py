@@ -2,9 +2,9 @@ from parser_classes.bs4_parser import __bs4Parser
 
 
 class stolitsaprintParser(__bs4Parser):
-    def __init__(self):
+    def __init__(self, size, counts, proxy):
         self.parsing_page = "https://stolitsaprint.ru/pechat-nakleek/obemnye/"
-        super().__init__()
+        super().__init__(size, counts, proxy)
 
     def __merge_lists(self, list1, list2):
         return_dict = {}

@@ -10,8 +10,8 @@ from parser_classes.main_parser import __mainParser
 
 
 class __SeleniumParser(__mainParser):
-    def __init__(self) -> None:
-        super().__init__()
+    def __init__(self, size, counts, proxy) -> None:
+        super().__init__(size, counts, proxy)
         options = webdriver.ChromeOptions()
         options.add_argument("--window-size=1920,1080")
         # options.add_argument('--proxy-server=%s' % self.proxy)`

@@ -2,9 +2,9 @@ from parser_classes.selenium_parser import __SeleniumParser
 
 
 class yfprintParser(__SeleniumParser):
-    def __init__(self) -> None:
+    def __init__(self, size, counts, proxy) -> None:
         self.parsing_page = "https://www.yfprint.ru/polygrafiya/izgotovlenie-nakleek-so-smoloj/"
-        super().__init__()
+        super().__init__(size, counts, proxy)
 
     def parse(self, container) -> None:
         self.get(self.parsing_page)

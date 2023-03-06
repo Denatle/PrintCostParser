@@ -1,8 +1,8 @@
 class __mainParser:
-    def __init__(self):
-        self.proxy = ""
-        self.counts = [49, 100, 500, 1000]
-        self.size = 50
+    def __init__(self, size, counts, proxy):
+        self.proxy = proxy
+        self.counts = counts
+        self.size = size
 
     def parse(self, container: list) -> None:
         pass
