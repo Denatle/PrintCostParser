@@ -4,5 +4,8 @@ class __mainParser:
         self.counts = counts
         self.size = size
 
+    def quit(self):
+        pass
+
     def parse(self, container: list) -> None:
         pass

@@ -14,7 +14,8 @@ class __SeleniumParser(__mainParser):
         super().__init__(size, counts, proxy)
         options = webdriver.ChromeOptions()
         options.add_argument("--window-size=1920,1080")
-        # options.add_argument('--proxy-server=%s' % self.proxy)`
+        options.add_argument('--proxy-server=%s' % self.proxy)
+        options.add_experimental_option("excludeSwitches", ["enable-logging"])
         options.add_argument("--headless")
         self.driver = webdriver.Chrome(options=options, service=Service(
             ChromeDriverManager().install()))
@@ -38,6 +39,9 @@ class __SeleniumParser(__mainParser):
 
     def to_select(self, elem_) -> Select:
         return Select(elem_)
+
+    def quit(self):
+        self.driver.quit()
 
     def parse(self, container: list) -> None:
         pass

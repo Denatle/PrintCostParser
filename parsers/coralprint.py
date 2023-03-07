@@ -12,7 +12,7 @@ class coralprintParser(__UndetectedParser):
     def parse(self, container: list) -> None:
         self.get(self.parsing_page)
 
-        width = self.wait('width', 30, By.ID)
+        width = self.wait('width', 5, By.ID)
         height = self.find('height', By.ID)
         count_input = self.find('count', By.ID)
 

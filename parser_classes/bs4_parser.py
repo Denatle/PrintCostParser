@@ -12,3 +12,6 @@ class __bs4Parser(__mainParser):
 
     def parse(self, container: list) -> None:
         pass
+
+    def quit(self):
+        pass

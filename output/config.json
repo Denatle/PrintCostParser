@@ -1,0 +1,15 @@
+{
+  "count": [
+    100,
+    500,
+    1000,
+    3000
+  ],
+  "size": 50,
+  "proxy": "",
+  "disable_yf": true,
+  "disable_gc": false,
+  "disable_stolitsa": false,
+  "disable_coral": true,
+  "disable_stickery": false
+}
