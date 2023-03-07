@@ -17,7 +17,6 @@ class stickeryParser(__bs4Parser):
         return float(return_text)
 
     def parse(self, container) -> None:
-        global cost
         soup = self.get(self.parsing_page)
 
         size = self.size / 10
